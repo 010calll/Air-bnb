@@ -1,0 +1,265 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Admin",
+      "email": "admin@test.com",
+      "password": "admin",
+      "isAdmin": true
+    },
+    {
+      "id": 2,
+      "name": "Oula Elkhadiri",
+      "email": "oula@test.com",
+      "password": "oula@test.com",
+      "isAdmin": false
+    },{
+      "id": 3,
+      "name": "Houda Kafila",
+      "email": "houda@test.com",
+      "password": "houda@test.com",
+      "isAdmin": false
+    },{
+      "id": 4,
+      "name": "Fati Essadaki",
+      "email": "fati@test.com",
+      "password": "fati@test.com",
+      "isAdmin": false
+    }
+  ],
+ "listings": [
+  {
+    "id": 1,
+    "title": "Appartement moderne à Casablanca",
+    "city": "Casablanca",
+    "price": 450,
+    "image": "https://images.pexels.com/photos/19783674/pexels-photo-19783674.jpeg",
+    "images": [
+      "https://images.pexels.com/photos/19783674/pexels-photo-19783674.jpeg",
+      "https://images.pexels.com/photos/20445895/pexels-photo-20445895.jpeg",
+      "https://images.pexels.com/photos/34086242/pexels-photo-34086242.jpeg",
+      "https://images.pexels.com/photos/8572163/pexels-photo-8572163.jpeg",
+      "https://images.pexels.com/photos/7614604/pexels-photo-7614604.jpeg"
+    ],
+    "beds": 2,
+    "baths": 1,
+    "kitchens": 1,
+    "salons": 1,
+    "description": "Appartement lumineux proche du centre-ville avec une vue magnifique sur la médina.",
+    "rating": 4.8,
+    "ownerName": "Ahmed Ben Ali",
+    "ownerPhone": "+212 6 12 34 56 78",
+    "address": "123 Boulevard Mohammed V, Casablanca 20000, Maroc"
+  },
+  {
+    "id": 2,
+    "title": "Villa luxueuse à Marrakech",
+    "city": "Marrakech",
+    "price": 850,
+    "image": "https://images.pexels.com/photos/13070498/pexels-photo-13070498.jpeg",
+    "images": [
+      "https://images.pexels.com/photos/13070498/pexels-photo-13070498.jpeg",
+      "https://images.pexels.com/photos/4502973/pexels-photo-4502973.jpeg",
+      "https://images.pexels.com/photos/15531322/pexels-photo-15531322.jpeg",
+      "https://images.pexels.com/photos/15531325/pexels-photo-15531325.jpeg",
+      "https://images.pexels.com/photos/30673763/pexels-photo-30673763.jpeg"
+    ],
+    "beds": 4,
+    "baths": 3,
+    "kitchens": 1,
+    "salons": 2,
+    "description": "Villa spacieuse avec piscine, jardin paysagé et accès direct aux médinas.",
+    "rating": 4.9,
+    "ownerName": "Fatima El Mansouri",
+    "ownerPhone": "+212 6 23 45 67 89",
+    "address": "456 Avenue de la Menara, Marrakech 40000, Maroc"
+  },
+  {
+    "id": 3,
+    "title": "Studio charmant à Fès",
+    "city": "Fès",
+    "price": 280,
+    "image": "https://images.pexels.com/photos/8572163/pexels-photo-8572163.jpeg",
+    "images": [
+      "https://images.pexels.com/photos/8572163/pexels-photo-8572163.jpeg",
+      "https://images.pexels.com/photos/7614604/pexels-photo-7614604.jpeg",
+      "https://images.pexels.com/photos/3190541/pexels-photo-3190541.jpeg",
+      "https://images.pexels.com/photos/5998041/pexels-photo-5998041.jpeg",
+      "https://images.pexels.com/photos/6077368/pexels-photo-6077368.jpeg"
+    ],
+    "beds": 1,
+    "baths": 1,
+    "kitchens": 1,
+    "salons": 1,
+    "description": "Petit studio cosy dans la vieille médina, idéal pour les clients solo.",
+    "rating": 4.6,
+    "ownerName": "Muhammad Al-Fasi",
+    "ownerPhone": "+212 6 34 56 78 90",
+    "address": "Medina Fès, Quartier Andalous, Fès 30000, Maroc"
+  },
+  {
+    "id": 4,
+    "title": "Penthouse à Casablanca",
+    "city": "Casablanca",
+    "price": 1200,
+    "image": "https://images.pexels.com/photos/3190541/pexels-photo-3190541.jpeg",
+    "images": [
+      "https://images.pexels.com/photos/3190541/pexels-photo-3190541.jpeg",
+      "https://images.pexels.com/photos/5998041/pexels-photo-5998041.jpeg",
+      "https://images.pexels.com/photos/6077368/pexels-photo-6077368.jpeg",
+      "https://images.pexels.com/photos/11701153/pexels-photo-11701153.jpeg",
+      "https://images.pexels.com/photos/7045941/pexels-photo-7045941.jpeg"
+    ],
+    "beds": 3,
+    "baths": 2,
+    "kitchens": 1,
+    "salons": 2,
+    "description": "Penthouse moderne avec terrasse panoramique et vue sur l'océan.",
+    "rating": 5.0,
+    "ownerName": "Karim Zaki",
+    "ownerPhone": "+212 6 45 67 89 01",
+    "address": "999 Ocean Plaza, Boulevard de la Corniche, Casablanca 20100, Maroc"
+  },
+  {
+    "id": 5,
+    "title": "Riad traditionnel à Marrakech",
+    "city": "Marrakech",
+    "price": 650,
+    "image": "https://images.pexels.com/photos/412050/pexels-photo-412050.jpeg",
+    "images": [
+      "https://images.pexels.com/photos/412050/pexels-photo-412050.jpeg",
+      "https://images.pexels.com/photos/31356131/pexels-photo-31356131.jpeg",
+      "https://images.pexels.com/photos/30757354/pexels-photo-30757354.jpeg",
+      "https://images.pexels.com/photos/20453463/pexels-photo-20453463.jpeg",
+      "https://images.pexels.com/photos/30757394/pexels-photo-30757394.jpeg"
+    ],
+    "beds": 2,
+    "baths": 2,
+    "kitchens": 1,
+    "salons": 1,
+    "description": "Riad authentique avec cour intérieure, fontaine et décoration traditionnelle.",
+    "rating": 4.7,
+    "ownerName": "Noor El Amrani",
+    "ownerPhone": "+212 6 56 78 90 12",
+    "address": "Riad Zitoun Al Qadim, Medina Marrakech 40000, Maroc"
+  },
+  {
+    "id": 6,
+    "title": "Maison de vacances à Agadir",
+    "city": "Agadir",
+    "price": 380,
+    "image": "https://images.pexels.com/photos/7614604/pexels-photo-7614604.jpeg",
+    "images": [
+      "https://images.pexels.com/photos/7614604/pexels-photo-7614604.jpeg",
+      "https://images.pexels.com/photos/3190541/pexels-photo-3190541.jpeg",
+      "https://images.pexels.com/photos/5998041/pexels-photo-5998041.jpeg",
+      "https://images.pexels.com/photos/6077368/pexels-photo-6077368.jpeg",
+      "https://images.pexels.com/photos/11701153/pexels-photo-11701153.jpeg"
+    ],
+    "beds": 2,
+    "baths": 1,
+    "kitchens": 1,
+    "salons": 1,
+    "description": "Maison ensoleillée près de la plage, idéale pour les familles.",
+    "rating": 4.5,
+    "ownerName": "Hassan Boutaleb",
+    "ownerPhone": "+212 6 67 89 01 23",
+    "address": "Plage Agadir, Résidence Océan Bleu, Agadir 80000, Maroc"
+  },
+  {
+    "id": 7,
+    "title": "Appartement cosy à Tanger",
+    "city": "Tanger",
+    "price": 320,
+    "image": "https://images.pexels.com/photos/7614604/pexels-photo-7614604.jpeg",
+    "images": [
+      "https://images.pexels.com/photos/7614604/pexels-photo-7614604.jpeg",
+      "https://images.pexels.com/photos/3190541/pexels-photo-3190541.jpeg",
+      "https://images.pexels.com/photos/5998041/pexels-photo-5998041.jpeg",
+      "https://images.pexels.com/photos/6077368/pexels-photo-6077368.jpeg",
+      "https://images.pexels.com/photos/11701153/pexels-photo-11701153.jpeg"
+    ],
+    "beds": 1,
+    "baths": 1,
+    "kitchens": 1,
+    "salons": 1,
+    "description": "Appartement lumineux avec balcon donnant sur la mer, proche du centre-ville.",
+    "rating": 4.4,
+    "ownerName": "Leila Zahra",
+    "ownerPhone": "+212 6 78 90 12 34",
+    "address": "12 Rue de la Plage, Tanger 90000, Maroc"
+  },
+  {
+    "id": 8,
+    "title": "Villa avec piscine à Essaouira",
+    "city": "Essaouira",
+    "price": 720,
+    "image": "https://images.pexels.com/photos/7614604/pexels-photo-7614604.jpeg",
+    "images": [
+      "https://images.pexels.com/photos/7614604/pexels-photo-7614604.jpeg",
+      "https://images.pexels.com/photos/3190541/pexels-photo-3190541.jpeg",
+      "https://images.pexels.com/photos/5998041/pexels-photo-5998041.jpeg",
+      "https://images.pexels.com/photos/6077368/pexels-photo-6077368.jpeg",
+      "https://images.pexels.com/photos/11701153/pexels-photo-11701153.jpeg"
+    ],
+    "beds": 3,
+    "baths": 2,
+    "kitchens": 1,
+    "salons": 2,
+    "description": "Villa moderne avec piscine privée et jardin, parfaite pour les vacances en famille.",
+    "rating": 4.8,
+    "ownerName": "Youssef Idrissi",
+    "ownerPhone": "+212 6 89 01 23 45",
+    "address": "Quartier Plage, Essaouira 44000, Maroc"
+  },
+  {
+    "id": 9,
+    "title": "Studio économique à Rabat",
+    "city": "Rabat",
+    "price": 220,
+    "image": "https://images.pexels.com/photos/8572163/pexels-photo-8572163.jpeg",
+    "images": [
+      "https://images.pexels.com/photos/8572163/pexels-photo-8572163.jpeg",
+      "https://images.pexels.com/photos/7614604/pexels-photo-7614604.jpeg",
+      "https://images.pexels.com/photos/3190541/pexels-photo-3190541.jpeg",
+      "https://images.pexels.com/photos/5998041/pexels-photo-5998041.jpeg",
+      "https://images.pexels.com/photos/6077368/pexels-photo-6077368.jpeg"
+    ],
+    "beds": 1,
+    "baths": 1,
+    "kitchens": 1,
+    "salons": 1,
+    "description": "Studio économique idéal pour les étudiants ou jeunes professionnels.",
+    "rating": 4.2,
+    "ownerName": "Salma Raji",
+    "ownerPhone": "+212 6 90 12 34 56",
+    "address": "45 Avenue Hassan II, Rabat 10000, Maroc"
+  },
+  {
+    "id": 10,
+    "title": "Maison traditionnelle à Chefchaouen",
+    "city": "Chefchaouen",
+    "price": 400,
+    "image": "https://images.pexels.com/photos/25254859/pexels-photo-25254859.jpeg",
+    "images": [
+      "https://images.pexels.com/photos/25254859/pexels-photo-25254859.jpeg",
+      "https://images.pexels.com/photos/25070511/pexels-photo-25070511.jpeg",
+      "https://images.pexels.com/photos/1563277/pexels-photo-1563277.jpeg",
+      "https://images.pexels.com/photos/15278958/pexels-photo-15278958.jpeg",
+      "https://images.pexels.com/photos/9422948/pexels-photo-9422948.jpeg"
+    ],
+    "beds": 2,
+    "baths": 1,
+    "kitchens": 1,
+    "salons": 1,
+    "description": "Maison bleue traditionnelle au cœur de la médina, offrant une expérience authentique.",
+    "rating": 4.7,
+    "ownerName": "Mohamed El Houssaini",
+    "ownerPhone": "+212 6 12 34 56 78",
+    "address": "Rue des Fleurs, Chefchaouen 91000, Maroc"
+  }
+]
+
+,
+  "bookings": []
+}

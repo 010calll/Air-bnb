@@ -1,0 +1,87 @@
+CREATE DATABASE IF NOT EXISTS fusion_db;
+USE fusion_db;
+
+CREATE TABLE IF NOT EXISTS users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  email VARCHAR(150) NOT NULL UNIQUE,
+  password VARCHAR(255) NOT NULL,
+  role VARCHAR(20) NOT NULL DEFAULT 'client',
+  phone VARCHAR(50),
+  cin VARCHAR(50),
+  city VARCHAR(100),
+  address VARCHAR(255),
+  description TEXT,
+  is_admin TINYINT(1) NOT NULL DEFAULT 0,
+  status VARCHAR(20) NOT NULL DEFAULT 'active',
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS listings (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(200) NOT NULL,
+  city VARCHAR(100) NOT NULL,
+  price DECIMAL(10,2) NOT NULL,
+  image LONGTEXT NOT NULL,
+  images JSON,
+  beds INT NOT NULL DEFAULT 1,
+  baths INT NOT NULL DEFAULT 1,
+  kitchens INT DEFAULT 1,
+  salons INT DEFAULT 1,
+  description TEXT NOT NULL,
+  rating DECIMAL(3,2) NOT NULL DEFAULT 0,
+  owner_id INT,
+  owner_name VARCHAR(150),
+  owner_phone VARCHAR(50),
+  address VARCHAR(255),
+  status VARCHAR(20) NOT NULL DEFAULT 'pending',
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (owner_id) REFERENCES users(id) ON DELETE SET NULL
+);
+
+CREATE TABLE IF NOT EXISTS bookings (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  listing_id INT NOT NULL,
+  user_id INT NOT NULL,
+  check_in_date DATE NOT NULL,
+  check_out_date DATE NOT NULL,
+  total_price DECIMAL(10,2) NOT NULL,
+  guest_phone VARCHAR(50),
+  guest_notes TEXT,
+  payment_method VARCHAR(100),
+  status VARCHAR(20) NOT NULL DEFAULT 'pending',
+  platform_fee DECIMAL(10,2) NOT NULL DEFAULT 0,
+  owner_payout DECIMAL(10,2) NOT NULL DEFAULT 0,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (listing_id) REFERENCES listings(id) ON DELETE CASCADE,
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS settings (
+  id INT PRIMARY KEY,
+  commission_rate DECIMAL(5,4) NOT NULL DEFAULT 0.1000,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS reviews (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  listing_id INT NOT NULL,
+  user_id INT NOT NULL,
+  rating INT NOT NULL,
+  comment TEXT,
+  status VARCHAR(20) NOT NULL DEFAULT 'published',
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (listing_id) REFERENCES listings(id) ON DELETE CASCADE,
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS reports (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  reporting_user_id INT NOT NULL,
+  target_type VARCHAR(20) NOT NULL,
+  target_id INT NOT NULL,
+  reason TEXT NOT NULL,
+  status VARCHAR(20) NOT NULL DEFAULT 'pending',
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (reporting_user_id) REFERENCES users(id) ON DELETE CASCADE
+);
